@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="profiledesgin.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <title>Vinay Bharti</title>
+
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+      var cont=0;
+  function loopSlider(){
+    var xx= setInterval(function(){
+          switch(cont)
+          {
+          case 0:{
+              $("#slider-1").fadeOut(400);
+              $("#slider-2").delay(400).fadeIn(400);
+              $("#sButton1").removeClass("bg-purple-800");
+              $("#sButton2").addClass("bg-purple-800");
+          cont=1;
+          
+          break;
+          }
+          case 1:
+          {
+          
+              $("#slider-2").fadeOut(400);
+              $("#slider-1").delay(400).fadeIn(400);
+              $("#sButton2").removeClass("bg-blue-800");
+              $("#sButton1").addClass("bg-purple-800");
+             
+          cont=0;
+          
+          break;
+          }
+          
+          
+          }},8000);
+  
+  }
+  
+  function reinitLoop(time){
+  clearInterval(xx);
+  setTimeout(loopSlider(),time);
+  }
+  
+  
+  
+  function sliderButton1(){
+  
+      $("#slider-2").fadeOut(400);
+      $("#slider-1").delay(400).fadeIn(400);
+      $("#sButton2").removeClass("bg-blue-800");
+      $("#sButton1").addClass("bg-blue-800");
+      reinitLoop(4000);
+      cont=0
+      
+      }
+      
+      function sliderButton2(){
+      $("#slider-1").fadeOut(400);
+      $("#slider-2").delay(400).fadeIn(400);
+      $("#sButton1").removeClass("bg-blue-800");
+      $("#sButton2").addClass("bg-blue-800");
+      reinitLoop(4000);
+      cont=1
+      
+      }
+  
+      $(window).ready(function(){
+          $("#slider-2").hide();
+          $("#sButton1").addClass("bg-blue-800");
+          
+  
+          loopSlider();
+       
+          
+      
+      
+      
+      
+      });
+  
+    
+    </script>
+
+
+
+
+    </head>
+     <body>
+    <header class="text-black body-font">
+        <div class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center" style="font-family:verdana">
+          <a class="flex title-font font-medium items-center text-black mb-4 md:mb-0">
+
+            <span class="ml-16 text-4xl"style="font-family:verdana">Vinay Bharti</span>
+          </a>
+          <nav class="md:mr-auto md:ml-16 md:py-4 md:pl-9 md:border-gray-600	flex flex-wrap items-center text-base justify-center">
+            <a href="Profile.html" class="mr-8 hover:text-indigo-500 ">Profile</a>
+            <a href="/" class="mr-8 hover:text-indigo-500">Projects</a>
+            <a href="#projects" class="mr-8 hover:text-indigo-500">Skills</a>
+            <a href="#contactus" class="mr-8 hover:text-indigo-500">Contact</a>
+            
+          </nav>
+
+<!--search-->
+
+        <div class="pt-2 relative mx-auto text-indigo-600 pl-2">
+          <input class="border-2 border-blue-200 bg-white h-10 px-5 pr-15 rounded-lg text-sm focus:outline-none"
+            type="search" name="search" placeholder="Search projects">
+          <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+            <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+              viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
+              width="512px" height="512px">
+              <path
+                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+            </svg>
+          </button>
+          
+        </div>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4  border-gray-200 hover:border-blue-500 rounded mt-2 mr-48" style="font-family:verdana">
+          Hire Me
+        </button>
+      </header>
+<!--hire me button-->
+         
+    
+
+<!-- setion Text -->
+
+      <section class="text-gray-700 body-font  px-12 py-22 mx-auto ">
+        <div class="container mx-auto flex px-16 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0.1 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" style="font-family:verdana">Hey, i'm  Vinay Bharti
+              <br class="hidden lg:inline-block">
+            </h1>
+
+            <h1 class="title-font sm:text-2xl text-2xl mb-4 font-medium text-gray-900" style="font-family:verdana">Computer Science Student
+                <br class="hidden lg:inline-block">
+              </h1>
+
+
+            <p class="mb-6 leading-relaxed" style="font-family:verdana">Seeking the role of a Software Engineer where I can contribute towards the organizational goals through my analytical skills and knowledge acquired by pursuing a degree in Software Engineering.</p>
+            <div class="flex justify-center">
+              <button class="bg-transparent hover:bg-blue-500 text-black font-semi hover:text-white py-1 px-8 border border-blue-500 hover:border-transparent rounded " style="font-family:verdana">
+                Learn More
+                <span style="transform: scale(1); ">&#x279c;</span>
+              </button>
+            </div>
+          </div>
+         
+          <div class="card mr-40">
+            <span class="surface"></span>
+            <h1>Vinay Bharti</h1>>
+            <h3>Full stack Developer</h3>
+            <a class= "fab fa-linkedin" href="https://www.linkedin.com/in/vinay-bharti-b825b4121/"style="font-size:16px" style="padding-bottom: 250px"></a>
+            <a class="fab fa-twitter" href="https://twitter.com/vinaybharti1" style="font-size:16px"></a>
+            <a class="fab fa-github bg-black" href="https://github.com/iamvn" style="font-size:16px"></a>
+            </div>
+        </section>
+
+<!-- BlogPost -->
+
+<section class="text-gray-700 body-font">
+  <div class="container px-28 py-20 mx-auto  items-center bg-white shadow-lg" style="min-height: 19rem;" id="projects ">
+     
+    <div class="sliderAx h-auto">
+        <div id="slider-1" class="container mx-auto">
+          
+          <div class="flex flex-wrap">
+          <div class="p-4 md:w-1/3 shadow-sm">
+            <div class="h-full border-2 border-gray-500 rounded-lg overflow-hidden">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=720"alt="Projects">
+              <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-700 mb-1">Web Designing</h2>
+                  <p class="leading-relaxed mb-3">Project description.</p>
+                <div class="flex items-center flex-wrap ">
+                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="/" >Learn More
+                    <svg class="w-4 h-4 ml-2 " viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"  stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 md:w-1/3 shadow-sm">
+            <div class="h-full border-2 border-gray-500 rounded-lg overflow-hidden">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=720"alt="Projects">
+              <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-700 mb-1">Web Designing</h2>
+                  <p class="leading-relaxed mb-3">Project description.</p>
+                <div class="flex items-center flex-wrap ">
+                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="/" >Learn More
+                    <svg class="w-4 h-4 ml-2 " viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"  stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 md:w-1/3 shadow-sm">
+            <div class="h-full border-2 border-gray-500 rounded-lg overflow-hidden">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=720"alt="Projects">
+              <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-700 mb-1">Web Designing</h2>
+                  <p class="leading-relaxed mb-3">Project description.</p>
+                <div class="flex items-center flex-wrap ">
+                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="/" >Learn More
+                    <svg class="w-4 h-4 ml-2 " viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"  stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          </div>  
+      </div>
+       <!-- container -->
+        <br>
+        </div>
+  
+        <div id="slider-2" class="container mx-auto">
+          <div class="flex flex-wrap">
+            <div class="p-4 md:w-1/3 shadow-sm">
+              <div class="h-full border-2 border-gray-500 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=720"alt="Projects">
+                <div class="p-6">
+                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-700 mb-1">Web Designing</h2>
+                    <p class="leading-relaxed mb-3">Project description.</p>
+                  <div class="flex items-center flex-wrap ">
+                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="/" >Learn More
+                      <svg class="w-4 h-4 ml-2 " viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"  stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="p-4 md:w-1/3 shadow-sm">
+              <div class="h-full border-2 border-gray-500 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=720"alt="Projects">
+                <div class="p-6">
+                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-700 mb-1">Web Designing</h2>
+                    <p class="leading-relaxed mb-3">Project description.</p>
+                  <div class="flex items-center flex-wrap ">
+                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="/" >Learn More
+                      <svg class="w-4 h-4 ml-2 " viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"  stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="p-4 md:w-1/3 shadow-sm">
+              <div class="h-full border-2 border-gray-500 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=720"alt="Projects">
+                <div class="p-6">
+                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-700 mb-1">Web Designing</h2>
+                    <p class="leading-relaxed mb-3">Project description.</p>
+                  <div class="flex items-center flex-wrap ">
+                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="/" >Learn More
+                      <svg class="w-4 h-4 ml-2 " viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"  stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+       
+
+
+      </div> <!-- container -->
+        <br>
+        </div>
+      </div>
+      <br>
+   <div class="flex justify-between w-12 mx-auto">
+          <button id="sButton1" onclick="sliderButton1()" class="bg-blue-500 rounded-full w-4 pb-2" ></button>
+      <button id="sButton2" onclick="sliderButton2() " class="bg-blue-400 rounded-full w-4 p-2"></button>
+    </div>
+</section>
+
+<!-- BlogPost -->
+
+
+<!-- abouts -->
+
+      <section class="text-gray-700 body-font">      
+        <div class="container px-1 py-16 mx-auto flex flex-col">
+          <div  id="opening" class="lg:w-4/6 mx-auto">
+            
+            <div class="flex flex-col sm:flex-row mt-12">
+              <div class="sm:w-1/2 text-center sm:pr-8 sm:py-8">
+                <div class="w-40 h-40 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                    <img class="circular--portrait" src="aboutus.jpeg" style="border-radius: 10%" style="height: 50%;">
+                </div>
+                <div class="flex flex-col items-center text-center justify-center">
+                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Vinay Bharti</h2>
+                  <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                  <p class="text-base text-gray-800">Education:-  GH Raisoni College of Engineering, Nagpur</p>
+                  <h4 style="color:gray; font-size:smaller">   CCGPA:- 7.69 || 2017-2020</h4>
+                  <p class="text-base text-gray-800">Branch:- Computer Science</p>
+                  <p class="text-base text-indigo-800 text-lg" >Skills:-</p>
+                  <div class="mt-3 pt-0 flex flex-wrap mx-8.5">
+                    <div class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-black hover:text-indigo-100 cursor-default">
+                      C
+                    </div>
+                    <div class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-black hover:text-indigo-100 cursor-default">
+                      java
+                    </div>
+                    <div class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-black hover:text-indigo-100 cursor-default">
+                      selenium
+                    </div>
+                    <div class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-black hover:text-indigo-100 cursor-default">
+                      web development
+                    </div>
+                    <div class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-black hover:text-indigo-100 cursor-default">
+                      sql
+                    </div>
+                    <div class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-black hover:text-indigo-100 cursor-default">
+                      spring boot
+                    </div>
+                    <div class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-black hover:text-indigo-100 cursor-default">
+                      software testing
+                    </div>
+                    <div class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-black hover:text-indigo-100 cursor-default">
+                       adobe XD, illustrator
+                    </div>
+                    <div class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-black hover:text-indigo-100 cursor-default">
+                      figma
+                   </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <p class="leading-relaxed text-lg mb-4">I am an undergraduate student pursuing B.E in computer science from GHRCE. Besides Academics i have a huge interest in UI designing and software development, i designed UI for my Diploma, hackathon and few other projects. I am looking forward to bringing this passion to a full-time role.</p>
+                <a class="text-indigo-500 inline-flex items-center" href="/">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<!--contact us-->
+
+      <section class="text-gray-700 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb- text-gray-900" id="contactus">Get in Touch</h1>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <input class="w-full bg-gray-100 rounded border border-gray-500 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Name" type="text">
+              </div>
+              <div class="p-2 w-1/2">
+                <input class="w-full bg-gray-100 rounded border border-gray-500 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="vinay@example.com" type="email">
+              
+
+
+              </div>
+              <div class="p-2 w-full">
+                <textarea class="w-full bg-gray-100 rounded border border-gray-500 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message"></textarea>
+              </div>
+              <div class="p-2 w-full">
+                <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-black rounded text-lg">Send</button>
+              </div>
+              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-400 text-center">
+                 </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- footer -->
+<footer class="text-gray-700 body-font">
+    <div class="container px-5 py-2 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <span class="ml-3 text-xl">Vinay Bharti</span>
+      </a>
+      <p class="text-sm text-gray-700 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-black sm:py-2 sm:mt-0 mt-4">© 2020 Created by Vinay Bharti —
+        <a href="https://www.linkedin.com/in/vinay-bharti-b825b4121/" class="text-indigo-600 ml-1" rel="noopener noreferrer" target="_blank">@vinaybharti</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-indigo-600" href="https://www.facebook.com/vinay.bharti.543">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+
+        <a class="ml-3 text-blue-500" href="https://twitter.com/vinaybharti1">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+
+
+        <a class="ml-3 text-pink-500" href="https://www.instagram.com/iamvinaaay/">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+
+
+
+        <a class="ml-3 text-blue-500" href="https://www.linkedin.com/in/vinay-bharti-b825b4121/">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+ 
+
+</body>
+</html>
