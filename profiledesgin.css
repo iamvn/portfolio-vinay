@@ -105,3 +105,15 @@
   width: 40px;
   height: 40px;
 }
+#sButton1,
+#sButton2 {
+  border: none !important;
+  border-style: none;
+}
+#diploma {
+  font-weight: 700;
+}
+#diploma2,
+#diploma3 {
+  font-size: small;
+}
